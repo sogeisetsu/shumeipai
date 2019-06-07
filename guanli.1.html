@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>管理界面</title>
+    <script type="text/javascript">
+        function refreshFrame() {
+            document.getElementById('myframe').contentWindow.location.reload(true);
+        }
+
+        function reloadPage() {  
+            location.reload()
+        }
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .main {
+            width: 1000px;
+            margin: 0 auto;
+            font-size: 14px
+        }
+        
+        .buttons {
+            padding: 30px 0;
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            border: 1px dashed #666;
+        }
+        
+        button {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 5px 10px;
+            line-height: 25px;
+            border: #666 1px solid;
+        }
+        
+        .controls {
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            border: 1px dashed #666;
+        }
+        
+        .d0 h4 {
+            width: 120px;
+            text-align: center;
+            border: #666 1px solid;
+        }
+        
+        .d3 {
+            width: 300px;
+            overflow: hidden;
+        }
+        
+        .d3 h4 {
+            float: left;
+            width: 120px;
+            text-align: center;
+            border: #666 1px solid;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="buttons">
+            <button>打印土壤湿度报表值</button>
+            <button>打印土壤湿度报表</button>
+            <button>打印空气温湿度报表</button>
+        </div>
+        <div class="controls">
+            <div class="d0">
+                <h4>空气湿度值</h4>
+                <h4>空气温度值</h4>
+            </div>
+            <div class="d1">
+                泵正转<input type="radio" name="as"><br> 泵反转
+                <input type="radio" name="as"><br> 泵复位
+                <input type="radio" name="as"><br>
+            </div>
+            <div class="other">
+                <div class="d2">
+                    直流电机泵手动转速<input type="range">
+                </div>
+                <div class="d3">
+                    <h4>电机实际电压</h4>
+                    <h4>灌水量</h4>
+                    <h4>电机给定电压</h4>
+                    <h4>土壤湿度</h4>
+                </div>
+            </div>
+
+        </div>
+        <h2>实时数据</h2>
+        <iframe id="myframe" width="100%" src="1.txt" scrolling="no" frameborder="3"></iframe>
+        <input type="button" onclick="javascript:refreshFrame();" value="刷新实时数据" />
+        <input type="button" value="chrome浏览器刷新点这里" onclick="reloadPage()">
+    </div>
+</body>
+<html>
