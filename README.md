@@ -29,7 +29,12 @@
      #### nohup is the command that is responsible for running in the background
      #### These three commands can be learned through the network
  - shell 脚本
-
+    - 此脚本目的是定时将数据上传到服务器
+    - [在运行此脚本前应解决scp无密码传输的问题](https://blog.csdn.net/u012454773/article/details/72779439)
+    - 后台运行的命令为  nohup sh /home/pi/tran/a.sh >> /home/pi/tran/d.txt 2>&1 &
+    - The purpose of this script is to periodically upload data to the server.
+    - [Scp should be resolved without password transfer before running this script] (https://blog.csdn.net/u012454773/article/details/72779439)
+    - The command to run in the background is nohup sh /home/pi/tran/a.sh >> /home/pi/tran/d.txt 2>&1 &
 ## 云服务器相关配置
 
  - 服务器购买及选择
