@@ -12,7 +12,11 @@
     - [Camera tutorial](https://github.com/sogeisetsu/shumeipai/blob/master/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%98%E6%96%B9%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.docx)
  - 树莓派相关传感器的使用
     - [Some notes about the sensor.md](https://github.com/sogeisetsu/shumeipai/blob/master/Some%20notes%20about%20the%20sensor.md)
+    - [Code to control soil moisture sensor](https://github.com/sogeisetsu/shumeipai/blob/master/%E5%9C%9F%E5%A3%A4.py)
+    - [Control the code of dht11](https://github.com/sogeisetsu/shumeipai/blob/master/dh11.py)
+    - [Control relay code](https://github.com/sogeisetsu/shumeipai/blob/master/%E7%BB%A7%E7%94%B5%E5%99%A8.py)
  - 树莓派控制传感器的代码
+    - [Console code.py](https://github.com/sogeisetsu/shumeipai/blob/master/Console%20code.py)
  - 树莓派端的内网穿透
  - scp corntab nohup 介绍
  - shell 脚本
