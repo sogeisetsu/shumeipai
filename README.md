@@ -6,6 +6,7 @@
  - 树莓派简介
     - [the introduction of pi .md](https://github.com/sogeisetsu/shumeipai/blob/master/the%20introduction%20of%20pi.md)
  - 树莓派安装系统并网络连接
+    - [How to Set up pi and Networks.md](https://github.com/sogeisetsu/shumeipai/blob/master/How%20to%20Set%20up%20pi%20and%20Networks.md)
  - 树莓派摄像头的启用
  - 树莓派相关传感器的使用
  - 树莓派控制传感器的代码
