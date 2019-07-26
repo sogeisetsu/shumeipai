@@ -38,9 +38,26 @@
 ## 云服务器相关配置
 
  - 服务器购买及选择
+    - 服务器我购买的是阿里云的轻量级服务器，现在可以使用学生优惠
+    - 服务器需要搭一个网站的框架，推荐用flask 我用的是宝塔
+    - 使用宝塔只需要看官方教程就够了
+    
+    *Server I purchased Alibaba Cloud's lightweight server, now I can use student discounts
+The server needs to build a website framework, recommend using flask. I use a pagoda.
+It is enough to use the pagoda only to see the official tutorial.*
  - 端口的开关
+    - 需要开一些端口
+    - 我开的是这些端口
+    - ![图片](https://img-blog.csdnimg.cn/20190727001946742.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N1eXVlcw==,size_16,color_FFFFFF,t_70)
  - 网站配置
+    - 宝塔页面上配置上数据库，ftp，网站。其实刚开始设置宝塔的时候会有提示，按照提示设置lnmp就好了
+     **Configure the database, ftp, website on the Pagoda page. In fact, when you first set up the pagoda, there will be a prompt, follow the prompts to set lnmp just fine**
  - frp 配置树莓派公网ip
+    - 这个参考前面内网穿透的教程
  - 前端网页代码
+    - [前端](https://github.com/sogeisetsu/shumeipai/blob/master/index%20(2).html)
+    - [Front end code](https://github.com/sogeisetsu/shumeipai/blob/master/index%20(2).html)
  - 接受树莓派传来的文件
+    - 在前端代码里有说明
  - 发送文件
+    - 在前端代码里有说明
