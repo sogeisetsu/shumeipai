@@ -18,7 +18,16 @@
  - 树莓派控制传感器的代码
     - [Console code.py](https://github.com/sogeisetsu/shumeipai/blob/master/Console%20code.py)
  - 树莓派端的内网穿透
+    - [参考这里设置](https://www.jianshu.com/p/a921e85280ed)
  - scp corntab nohup 介绍
+    - scp 是负责传文件的命令
+    - crontab是负责控制传文件时间的命令
+    - nohup 是负责后台运行的命令
+    - 这三个命令可以通过网络来学习
+    - scp is the command to transfer files
+     #### crontab is the command responsible for controlling the time of the file transfer
+     #### nohup is the command that is responsible for running in the background
+     #### These three commands can be learned through the network
  - shell 脚本
 
 ## 云服务器相关配置
