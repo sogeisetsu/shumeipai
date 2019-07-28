@@ -3,8 +3,8 @@
 
 import RPi.GPIO as GPIO
 import time
-for i in range (10):
-    channel = 16  # 引脚号16
+for i in range (10): #这里设置的是循环十次，在实际应用中可以改为 while True:
+    channel = 16  # 引脚号16，这是设置dht11用的
     data = []  # 温湿度值
     j = 0
     # 计数器
@@ -72,20 +72,20 @@ for i in range (10):
         print "temperature : ", temperature, ", humidity : ", humidity
         c="温度"+str(temperature)+"."+"/"+"湿度"+str(humidity)
         GPIO.setup(21, GPIO.IN)
-        if GPIO.input(channel) == GPIO.LOW:
+        if GPIO.input(21) == GPIO.LOW:#设置土壤湿度传感器
             print "土壤检测结果：潮湿"
             c=c+"\n"+"土壤潮湿"+"\n"+"推荐不要浇水，具体以机器操作为准"
         else:
             print "土壤检测结果：干燥"
             c=c+"\n"+"土壤干燥"+"\n"+"推荐浇水，具体以机器操作为准"
-        f=open("123.txt","w+")
+        f=open("123.txt","w+") #将数据写入文件
         f.write(c)
         f.close
         if temperature >= 20:
             print"jiaoshui"
-            GPIO.setup(25, GPIO.OUT)
-            GPIO.output(25, GPIO.LOW)
-            print("3")
+            GPIO.setup(25, GPIO.OUT)#控制继电器
+            GPIO.output(25, GPIO.LOW)#这句意义不大，也可以是high，因为电阻不合适无论高低电平都是通路，所以只能采用setup后再cleanup。
+            print("3")#我这里设置的是浇水时间3秒
             time.sleep(1.0)
             print("2")
             time.sleep(1.0)
@@ -102,6 +102,6 @@ for i in range (10):
     else:  # 错误输出错误信息，和校验数据
         print "出现错误，输出校验结果"
         print "temperature : ", temperature, ", humidity : ", humidity, " check : ", check, " tmp : ", tmp
-    time.sleep(2)
+    time.sleep(2) #每隔2秒检测一次
 
     GPIO.cleanup()  # 重置针脚
