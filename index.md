@@ -3,7 +3,7 @@
 
 ***
 
-#### [中文界面](http://qkgoride.club/shumeipai/zh-CN_of_index.html)
+#### [点击进入纯中文界面](http://qkgoride.club/shumeipai/zh-CN_of_index.html)
 
 
 ***该文档部分引用自网络，引用部分已经注明***
