@@ -79,3 +79,6 @@ It is enough to use the pagoda only to see the official tutorial.*
    3. 然后从宝塔面板绑定域名
    4. 这样就可以通过域名访问了
    5. 我在这个项目中的域名是[www.qkgoride.club](http://www.qkgoride.club/)*截至2019/8/3 17：23此域名仍无法访问，原因是刚刚修改过相关内容，需要3600s后才可正常访问*
+   
+   ## 2019/8/7 更新
+   1. 我的网站目前在备案，所以无法通过域名访问，可以访问[106.14.162.154](http://106.14.162.154/)
